@@ -1,0 +1,9 @@
+extends layout
+
+include mixins/_storeCard
+
+block content
+    h2= title
+    .stores
+        each store in stores
+            +storeCard(store)
